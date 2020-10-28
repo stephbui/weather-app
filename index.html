@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="stylesheet" href="src/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
- 
+
   <script src="https://kit.fontawesome.com/434a0648f7.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -22,7 +22,7 @@
       <form class="search-form" id="search-form">
         <div class="row">
           <div class="col-9">
-            <input type="search" placeholder="enter your city" autofocus="on" autocomplete="off" id="city-input"
+            <input type="search" placeholder="Type your city..." autofocus="on" autocomplete="off" id="city-input"
               class="form-control shadow-sm" />
           </div>
 
@@ -39,16 +39,15 @@
       <div class="row">
         <div class="col-6">
           <ul>
-            <li id="date"> </li>
+            <li id="date"></li>
             <li id="description"></li>
-            <li>💧Humidity: <span id="humidity"></span>%</li>
-            <li>💨Wind: <span id="wind"></span> km/h</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
           </ul>
         </div>
         <div class="col-6">
           <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
             class="weather-icon" />
-
           <span class="temperature" id="temperature"></span>
           <span class="units"> <a href="#" id="celcius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
         </div>
