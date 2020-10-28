@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+  <script src="https://kit.fontawesome.com/434a0648f7.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="src/styles.css">
+  <title>MeteoProject🌤</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-app">
+
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input type="search" placeholder="enter your city" autofocus="on" autocomplete="off" id="city-input"
+              class="form-control shadow-sm" />
+          </div>
+
+          <div class="button">
+            <button type="button" class="btn btn-primary shadow border-0">Search</button>
+            <button id="current-location-button" type="button" value="current"
+              class="btn btn-icon shadow border-0 ">📍</button>
+          </div>
+        </div>
+      </form>
+
+      <h1 id="city"></h1>
+
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li id="date"> </li>
+            <li id="description"></li>
+            <li>💧Humidity: <span id="humidity"></span>%</li>
+            <li>💨Wind: <span id="wind"></span> km/h</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
+            class="weather-icon" />
+
+          <span class="temperature" id="temperature"></span>
+          <span class="units"> <a href="#" id="celcius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          Mon <br>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+        <div class="col-4">
+          Tue <br>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+        <div class="col-4">
+          Wed<br>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+        <div class="col-4">
+          Thu<br>
+          <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+        <div class="col-4">
+          Fri<br>
+          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+        <div class="col-4">
+          Sat<br>
+          <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain-icon">
+          <p>
+            13°|5°
+          </p>
+        </div>
+      </div>
+
+      <img class="imgsun" src="img/imgsun.svg" />
+
+      <p class="footer">
+        This page was build by
+        <a class="linkin" href="https://www.linkedin.com/in/stephanie-bui-8504756a/" target="_blank">
+          <span style="color: grey;"><em>Stephanie Bui</em></span>
+      </p>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
