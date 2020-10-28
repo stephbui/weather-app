@@ -35,16 +35,19 @@
       </form>
 
       <h1 id="city"></h1>
-
+      <ul>
+        <li id="date" class="date-description"></li>
+        <li id="description" class="date-description"></li>
+      </ul>
+      
       <div class="row">
         <div class="col-6">
           <ul>
-            <li id="date"></li>
-            <li id="description"></li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
+            <li class="humidity-wind">Humidity: <span id="humidity"></span>%</li>
+            <li class="humidity-wind">Wind: <span id="wind"></span> km/h</li>
           </ul>
         </div>
+
         <div class="col-6">
           <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
             class="weather-icon" />
@@ -101,10 +104,10 @@
       <img class="imgsun" src="img/imgsun.svg" />
 
       <p class="footer">
-        Open-source by
-        <a class="linkin" href="https://github.com/stephbui/weather-app" target="_blank">
-          <span style="color: grey;"><em>Stephanie Bui</em></span>
+        <a href="https://github.com/stephbui/weather-app" target="_blank">
+          <span style="color: grey;"><em>Open-source code</em></span></a>,by Stephanie Bui
       </p>
+
     </div>
     <script src="src/index.js"></script>
 </body>
