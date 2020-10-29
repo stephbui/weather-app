@@ -6,17 +6,21 @@ padding: 0 20px;
 
 form {
   text-align: center;
-  margin: 60px 0;
+  margin: 50px 10px 0px 10px;
+}
+
+.button {
+  max-width: 600px;
 }
 
 h1 {
   color: #5A5252;
-  font-size: 500px;
+  font-size: 55px;
   font-weight: 900;
   line-height: 1;
   text-align: left;
   margin: 0;
-  padding: 30px 0px 0px 30px;
+  padding: 30px 20px 10px 35px;
 }
 
 ul {
@@ -32,31 +36,51 @@ ul {
 .date-description {
   font-size: 23px;
 }
-.humidity-wind{
+.humidity{
   font-size: 17px;
-  padding: 5px 10px 5px 100px;
+  line-height: 1;
+  padding: 30px 0px 0px 70px;
+}
+.wind{
+  font-size: 17px;
+  margin-left: 70px;
 }
 
 .weather-app {
   border: 1.5px solid #5A5252;
   padding: 30px;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 600px;
   border-radius: 50px;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
-.weather-icon {
-  position: relative;
-  top: -40px;
+.overview{
+  margin-bottom: 40px;
 }
+.clearfix {
+  position: relative;
+}
+
+.weather-temperature img{
+  margin-right: 10px;
+  height: 1;
+  width: 64px;
+
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: -39px;
+  font-size: 21px;
+}
+
+
 
 .float-left {
   position: relative;
-  right: -250px;
-  top: -70px;
-
 }
+
 
 .temperature{
   color: #5A5252;
@@ -64,12 +88,10 @@ ul {
   font-weight: 400;
   line-height: 1;
 }
-.units {
-  position: relative;
-  top: -32px;
-}
+
 .search-form{
   margin-bottom: 10px;
+  max-width: 600px;
 }
 
 .col-4 {
@@ -81,7 +103,7 @@ ul {
 
 .cloudy-icon {
   display: block;
-  font-size: 50px;
+  font-size: 100px;
   
 }
 
@@ -98,9 +120,9 @@ ul {
 }
 
 .footer {
-        color: #5A5252;
-        display: block;
-        font-family: "Courier New", Courier, monospace;
-        text-align: center;
-        margin: 10px;
-      }
+  color: #5A5252;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 0 ;
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="src/styles.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
@@ -13,6 +13,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <title> Weather-App🌤</title>
+  <link rel="stylesheet" href="src/styles.css">
 </head>
 
 <body>
@@ -39,22 +40,33 @@
         <li id="date" class="date-description"></li>
         <li id="description" class="date-description"></li>
       </ul>
-      
-      <div class="row">
-        <div class="col-6">
-          <ul>
-            <li class="humidity-wind">Humidity: <span id="humidity"></span>%</li>
-            <li class="humidity-wind">Wind: <span id="wind"></span> km/h</li>
-          </ul>
-        </div>
 
-        <div class="col-6">
-          <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
-            class="weather-icon" />
-          <span class="temperature" id="temperature"></span>
-          <span class="units"> <a href="#" id="celcius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
+      <div class="overview">
+
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li class="humidity">Humidity: <span id="humidity"></span>%</li>
+              <li class="wind">Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy icon"
+                class="float-left" />
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span>
+                <span class="units"> <a href="#" id="celcius-link">°C</a> | <a href="#"
+                    id="fahrenheit-link">°F</a></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
+
+
 
       <div class="row">
         <div class="col-4">
