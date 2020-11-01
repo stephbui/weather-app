@@ -10,6 +10,8 @@ form {
 }
 
 .button {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
   max-width: 600px;
 }
 
@@ -120,5 +122,6 @@ ul {
   display: block;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+  text-decoration: none;
   margin: 0 ;
 }
