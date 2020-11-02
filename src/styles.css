@@ -126,7 +126,15 @@ ul {
 }
 .github:hover {
 text-decoration: none;
-color:black;
+color:#5A5252;
+}
+.weather-temperature .active{
+color:  #5A5252;
+cursor: default;
+}
+
+.weather-temperature .active:hover{
+  text-decoration: none;
 }
 
 
