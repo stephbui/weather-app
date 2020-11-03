@@ -25,6 +25,15 @@ h1 {
   padding: 30px 20px 10px 35px;
 }
 
+h2{
+  color: #5A5252;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: .5;
+  margin: 0;
+
+}
+
 ul {
   color: #5A5252;
   display: block;
@@ -95,22 +104,11 @@ ul {
 .col-4 {
   text-align: center;
   margin: 0 auto;
-  padding: 8px;
+  padding: 20px;
   
 }
 
-.cloudy-icon {
-  display: block;
-  font-size: 100px;
-  
-}
 
-.rain-icon{
-  display: block;
-  font-size: 100px;
-  margin: 50px;
-
-}
 .imgsun {
   display: block;
   width: 150px;
