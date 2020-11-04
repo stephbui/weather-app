@@ -65,7 +65,7 @@ ul {
   margin: 30px auto;
   max-width: 600px;
   border-radius: 50px;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
 }
 
 .overview{
@@ -99,15 +99,12 @@ ul {
   line-height: 1;
 }
 
-
-
 .col-4 {
   text-align: center;
   margin: 0 auto;
   padding: 20px;
   
 }
-
 
 .imgsun {
   display: block;
