@@ -129,14 +129,6 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 
 
-
-
-
-
-
-
-
-
 function searchLocation(position) {
   let apiKey = "a68b01f6acebcedd5ae9fe5ee2fca1da";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${
