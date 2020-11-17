@@ -96,10 +96,6 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
-
-
-
-
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -121,13 +117,8 @@ function displayFahrenheitTemperature(event) {
 
 }
 
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-
-
-
 
 function searchLocation(position) {
   let apiKey = "a68b01f6acebcedd5ae9fe5ee2fca1da";
@@ -144,5 +135,4 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
 searchCity("Montreal");
