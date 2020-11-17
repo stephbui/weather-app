@@ -7,7 +7,7 @@ function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
@@ -44,7 +44,6 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
-
 function searchCity(city) {
   let apiKey = "a68b01f6acebcedd5ae9fe5ee2fca1da";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -60,7 +59,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
@@ -74,7 +72,7 @@ function displayForecast(response) {
         ${formatHours(forecast.dt * 1000)}
       </h2>
       <img 
-      src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+      src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
       />
 
       <div class= "weather-forecast-temperature">
